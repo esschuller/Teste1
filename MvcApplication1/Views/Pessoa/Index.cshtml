@@ -1,0 +1,82 @@
+﻿@model MvcApplication1.Models.Pessoa
+@{
+    ViewBag.Title = "Pessoa";
+}
+<h2>
+    Pessoa</h2>
+@using (Html.BeginForm("Index", "Pessoa", FormMethod.Post)) {
+
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Pessoa</legend>
+        <div class="editor-label">
+            @Html.LabelFor(x => x.PessoaID)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(x => x.PessoaID)
+        </div>
+        <div>
+            @Html.LabelFor(x => x.Nome)
+        </div>
+        <div>
+            @Html.EditorFor(x => x.Nome)
+            @Html.ValidationMessageFor(x => x.Nome)
+        </div>
+        <div>
+            @Html.LabelFor(x => x.Twitter)
+        </div>
+        <div>
+            @Html.EditorFor(x => x.Twitter)
+            @Html.ValidationMessageFor(x => x.Twitter)
+        </div>
+        <div>
+            @Html.LabelFor(x => x.Observacao)
+        </div>
+        <div>
+            @Html.TextAreaFor(x => x.Observacao)
+            @Html.ValidationMessageFor(x => x.Observacao)
+        </div>
+        <div>
+            @Html.LabelFor(x => x.Email)
+        </div>
+        <div>
+            @Html.EditorFor(x => x.Email)
+            @Html.ValidationMessageFor(x => x.Email)
+        </div>
+        <div>
+            @Html.LabelFor(x => x.Idade)
+        </div>
+        <div>
+            @Html.EditorFor(x => x.Idade)
+            @Html.ValidationMessageFor(x => x.Idade)
+        </div>
+        <div>
+            @Html.LabelFor(x => x.Login)
+        </div>
+        <div>
+            @Html.EditorFor(x => x.Login)
+            @Html.ValidationMessageFor(x => x.Login)
+        </div>
+        <div>
+            @Html.LabelFor(x => x.Senha)
+        </div>
+        <div>
+            @Html.PasswordFor(x => x.Senha)
+            @Html.ValidationMessageFor(x => x.Senha)
+        </div>
+        <div>
+            @Html.LabelFor(x => x.ConfirmarSenha)
+        </div>
+        <div>
+            @Html.PasswordFor(x => x.ConfirmarSenha)
+            @Html.ValidationMessageFor(x => x.ConfirmarSenha)
+        </div>
+        <p>
+            <input type="submit" value="Enviar" />
+        </p>
+    </fieldset>
+}
+@section Scripts{
+    @Scripts.Render("~/bundles/jqueryval");
+}

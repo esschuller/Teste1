@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="\\camberra\wwwroot\wcf" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="bin/WCF.Entities.pdb" publishTime="10/15/2012 15:25:01" />
+    <file relUrl="bin/WCF.Entities.dll" publishTime="10/15/2012 15:25:02" />
+    <file relUrl="bin/WCF.Service.pdb" publishTime="10/22/2012 17:06:10" />
+    <file relUrl="bin/WCF.Service.dll" publishTime="10/22/2012 17:06:11" />
+    <file relUrl="EmpresaService.svc" publishTime="10/05/2012 10:31:14" />
+    <file relUrl="Web.config" publishTime="10/22/2012 17:07:00" />
+    <file relUrl="Data/RolesRepository.xml" publishTime="10/08/2012 10:02:37" />
+    <file relUrl="Data/UsersRepository.xml" publishTime="10/08/2012 10:02:09" />
+    <file relUrl="comandos certificado.txt" publishTime="10/15/2012 17:05:44" />
+  </publishProfile>
+</publishData>

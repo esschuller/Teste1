@@ -1,0 +1,32 @@
+﻿@model MvcApplication1.Models.Pessoa
+@{
+    ViewBag.Title = "Lista";
+}
+<h2>Lista</h2>
+
+
+
+
+
+
+<div>
+<b>@Html.LabelFor(x => x.PessoaID) </b>
+</div>
+<div>
+    <b>@Model.PessoaID</b>
+</div>
+<div>
+    <b>@Html.LabelFor(x => x.Nome)</b>
+</div>
+<div>
+    <b>@Model.Nome</b>
+</div>
+<div>
+    <b>@Html.LabelFor(x => x.Twitter)</b>
+</div>
+<div>
+    <b>@Model.Twitter</b>
+</div>
+
+@Html.ActionLink("Voltar", "Index", "Home");
+

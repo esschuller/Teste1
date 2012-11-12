@@ -1,0 +1,13 @@
+criar certificado
+C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Bin>makecert -sr LocalMachine -ss My -sky exchange -pe -a sha1 -n CN=WCFTestCert C:WCFTestCert.cer
+
+
+localizar chave privada
+FindPrivateKey.exe My LocalMachine -n CN=WCFTestCert -a
+
+permissão para chave primaria
+icacls C:\ProgramData\Microsoft\Crypto\RSA\MachineKeys\a5644dd0149b6f9778ab1ccf969bbf5e_7162538f-9cf4-4fc2-9404-ef2ea64cc628 /grant:r "NT AUTHORITY\NETWORKSERVICE":R
+
+gerenciar
+run mmc
+certutil.exe -f -addstore Root WCFTestCert.cer

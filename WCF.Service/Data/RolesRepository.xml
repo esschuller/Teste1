@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<rolesRepository>
+  <user name="emerson">
+    <role name="Admin" />
+    <role name="Ti" />
+  </user>
+  <user name="ze">
+    <role name="Ti" />
+  </user>
+</rolesRepository>
